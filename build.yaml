@@ -1,0 +1,21 @@
+---
+include:
+  # Wireless build, ZMK Studio enabled (this is what you want day to day)
+  - board: pillbug
+    shield: bb40
+    snippet: studio-rpc-usb-uart
+    artifact-name: bb40-pillbug-studio
+
+  # Same, but forces a BLE settings reset -- flash this once if pairing
+  # ever gets stuck, then go back to the build above
+  - board: pillbug
+    shield: bb40
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_SETTINGS_RESET=y
+    artifact-name: bb40-pillbug-settings-reset
+
+  # Wired build for if you ever swap back to a real BlackPill
+  - board: blackpill_f411ce
+    shield: bb40
+    snippet: studio-rpc-usb-uart
+    artifact-name: bb40-blackpill-f411ce-studio

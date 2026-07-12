@@ -1,0 +1,17 @@
+# Copyright (c) 2026 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_BB40
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "MechWild BB40"
+
+# Encoder (EC11) support
+config EC11
+    default y
+
+config EC11_TRIGGER_GLOBAL_THREAD
+    default y
+
+endif # SHIELD_BB40
