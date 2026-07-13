@@ -1,0 +1,4 @@
+name: bb40-zmk-config
+build:
+  settings:
+    board_root: ..
