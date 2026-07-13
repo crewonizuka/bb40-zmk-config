@@ -9,9 +9,7 @@ include:
   # Same, but forces a BLE settings reset -- flash this once if pairing
   # ever gets stuck, then go back to the build above
   - board: pillbug//zmk
-    shield: bb40
-    snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_SETTINGS_RESET=y
+    shield: settings_reset
     artifact-name: bb40-pillbug-settings-reset
 
   # Wired build for if you ever swap back to a real BlackPill
