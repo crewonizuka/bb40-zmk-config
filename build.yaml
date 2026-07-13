@@ -4,19 +4,20 @@ include:
   - board: pillbug//zmk
     shield: bb40
     snippet: studio-rpc-usb-uart
-    artifact-name: bb40-pillbug-studio
     cmake-args: -DKCONFIG_ERROR_ON_WARNINGS=OFF
+    artifact-name: bb40-pillbug-studio
 
-  # Same, but forces a BLE settings reset -- flash this once if pairing
-  # ever gets stuck, then go back to the build above
+  # Flash this once if BLE pairing ever gets stuck, then go back to the
+  # Studio build above. This is a separate small firmware, not bb40 itself --
+  # it just clears the saved BLE/settings partition on boot.
   - board: pillbug//zmk
     shield: settings_reset
-    artifact-name: bb40-pillbug-settings-reset
     cmake-args: -DKCONFIG_ERROR_ON_WARNINGS=OFF
+    artifact-name: bb40-pillbug-settings-reset
 
   # Wired build for if you ever swap back to a real BlackPill
   - board: blackpill_f411ce//zmk
     shield: bb40
     snippet: studio-rpc-usb-uart
-    artifact-name: bb40-blackpill-f411ce-studio
     cmake-args: -DKCONFIG_ERROR_ON_WARNINGS=OFF
+    artifact-name: bb40-blackpill-f411ce-studio
