@@ -27,7 +27,7 @@
 
         default_layer {
             display-name = "Base";
-            bindings = 
+            bindings = <
                 &lt LOWER ESC &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BSPC
                 &lt RAISE TAB &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp ENTER
                 &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp DOT &kp UP &kp RSHFT
@@ -38,7 +38,7 @@
 
         lower_layer {
             display-name = "Lower";
-            bindings = 
+            bindings = <
                 &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
                 &trans &kp MINUS &kp EQUAL &trans &trans &trans &trans &kp LBKT &kp RBKT &kp SEMI &kp APOS
                 &trans &trans &trans &trans &trans &trans &trans &kp COMMA &kp FSLH &kp PG_UP &kp BSLH
@@ -49,7 +49,7 @@
 
         raise_layer {
             display-name = "Raise";
-            bindings = 
+            bindings = <
                 &kp TILDE &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &kp BSPC
                 &kp PSCRN &kp UNDER &kp PLUS &trans &trans &trans &trans &kp LBRC &kp RBRC &kp COLON &kp DQT
                 &trans &trans &trans &trans &trans &trans &trans &kp LT &kp GT &kp PG_UP &kp PIPE
@@ -60,7 +60,7 @@
 
         control_layer {
             display-name = "Control";
-            bindings = 
+            bindings = <
                 &bt BT_CLR &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp C_PP
                 &bt BT_SEL 0 &kp F11 &kp F12 &studio_unlock &trans &trans &trans &trans &trans &trans &kp K_LOCK
                 &bt BT_SEL 1 &out OUT_USB &kp CAPS &kp KP_NUM &kp SLCK &trans &trans &kp COMMA &kp DOT &kp C_VOL_UP &kp C_MUTE
