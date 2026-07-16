@@ -31,28 +31,28 @@
  */
 
 /* Columns, in the same order as info.json matrix_pins.cols */
-#define BB40_COL0   21   /* TODO: B10 */
-#define BB40_COL1   19   /* TODO: B1  */
-#define BB40_COL2   18   /* TODO: B0  */
-#define BB40_COL3   17   /* TODO: A7  */
-#define BB40_COL4   16   /* TODO: A6  */
-#define BB40_COL5   15   /* TODO: A5  */
-#define BB40_COL6   14   /* TODO: A4  */
-#define BB40_COL7   13   /* TODO: A3  */
-#define BB40_COL8   12   /* TODO: A2  */
-#define BB40_COL9   11   /* TODO: A1  */
-#define BB40_COL10  10   /* TODO: A0  */
-#define BB40_COL11  4   /* TODO: C15 */
+#define BB40_COL0   0   /* TODO: B10 */
+#define BB40_COL1   0   /* TODO: B1  */
+#define BB40_COL2   0   /* TODO: B0  */
+#define BB40_COL3   0   /* TODO: A7  */
+#define BB40_COL4   0   /* TODO: A6  */
+#define BB40_COL5   0   /* TODO: A5  */
+#define BB40_COL6   0   /* TODO: A4  */
+#define BB40_COL7   0   /* TODO: A3  */
+#define BB40_COL8   0   /* TODO: A2  */
+#define BB40_COL9   0   /* TODO: A1  */
+#define BB40_COL10  0   /* TODO: A0  */
+#define BB40_COL11  0   /* TODO: C15 */
 
 /* Rows, in the same order as info.json matrix_pins.rows */
-#define BB40_ROW0   25   /* TODO: B12 */
-#define BB40_ROW1   26   /* TODO: B13 */
-#define BB40_ROW2   27   /* TODO: B14 */
-#define BB40_ROW3   28   /* TODO: B15 */
+#define BB40_ROW0   0   /* TODO: B12 */
+#define BB40_ROW1   0   /* TODO: B13 */
+#define BB40_ROW2   0   /* TODO: B14 */
+#define BB40_ROW3   0   /* TODO: B15 */
 
 /* Encoder A/B pins */
-#define BB40_ENC_A  40   /* TODO: B4 */
-#define BB40_ENC_B  39   /* TODO: B3 */
+#define BB40_ENC_A  0   /* TODO: B4 */
+#define BB40_ENC_B  0   /* TODO: B3 */
 
 / {
     chosen {
@@ -164,7 +164,7 @@
         a-gpios = <&blackpill BB40_ENC_A (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&blackpill BB40_ENC_B (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <4>;
-        steps = <80>;
+        steps = <20>;
     };
 
     sensors {
