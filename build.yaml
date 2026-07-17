@@ -21,3 +21,14 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DKCONFIG_ERROR_ON_WARNINGS=OFF
     artifact-name: bb40-blackpill-f411ce-studio
+
+     # TEMPORARY diagnostic build: Studio + live USB console logging, so we can
+  # watch what the firmware actually does (or doesn't do) during a Studio
+  # connection attempt via a plain serial terminal like PuTTY. Remove this
+  # entry once the Studio connection issue is resolved -- logging has a
+  # real battery/power cost and isn't meant to stay on permanently.
+  - board: pillbug//zmk
+    shield: bb40
+    snippet: studio-rpc-usb-uart zmk-usb-logging
+    cmake-args: -DKCONFIG_ERROR_ON_WARNINGS=OFF
+    artifact-name: bb40-pillbug-studio-debug
